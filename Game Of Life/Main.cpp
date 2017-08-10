@@ -19,10 +19,10 @@ Uint32* pixels;
 const int width = 640;
 const int height = 480;
 
-vector<Cell> cells;
-
 using namespace concurrency;
 using namespace std;
+
+vector<Cell> cells;
 
 int Init() {
 	window = NULL;
