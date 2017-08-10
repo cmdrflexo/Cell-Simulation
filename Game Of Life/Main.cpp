@@ -1,4 +1,4 @@
-//IT'S EVERYDAY BRO, DO YOU GIVE UP AT NIGHT?
+//IT'S EVERYDAY BRO, DO YOU GIVE UP AT NIGHT, WE 24/7 MAN?
 #include <SDL.h>
 #include <stdio.h>
 #include <amp.h>
