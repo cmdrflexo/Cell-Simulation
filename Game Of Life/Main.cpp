@@ -55,7 +55,19 @@ Uint32* drawPixel(int x, int y, int c[], SDL_Surface *pixelSurface) {
 }
 
 void Draw() {
-	
+	int black[3] = { 0, 0, 0 };
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < width; j++) {
+			drawPixel(j, i, black, pixelSpace);
+		}	
+	}
+	for (int i = 0; i < cells.size(); i++) {
+		int r = cells[i].c[0];
+		int g = cells[i].c[1];
+		int b = cells[i].c[2];
+		int color[3] = { r, g, b };
+		drawPixel(cells[i].x, cells[i].y, color, pixelSpace);
+	}
 }
 
 void updateCells() {
@@ -87,6 +99,15 @@ int main(int argc, char *argv[]) {
 	SDL_Event event;
 
 	Init();
+
+	Cell test;
+	test.x = 20;
+	test.y = 20;
+	test.c[0] = 100;
+	test.c[1] = 100;
+	test.c[2] = 100;
+	test.state = true;
+	cells.push_back(test);
 
 	while (!quit) {
 		while (SDL_PollEvent(&event)) {
