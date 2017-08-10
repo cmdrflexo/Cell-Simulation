@@ -1,4 +1,4 @@
-//Do you see this Flexo?
+//IT'S EVERYDAY BRO?
 #include <SDL.h>
 #include <stdio.h>
 #include <amp.h>
