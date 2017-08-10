@@ -21,7 +21,7 @@ public:
 	int foodEff;
 	int divisionSize;
 	int timeWOFood;
-	vector<int> acceptedFood;
+	//vector<int> acceptedFood;
 
 	//Brain
 

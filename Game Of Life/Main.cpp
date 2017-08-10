@@ -71,15 +71,14 @@ void Draw() {
 }
 
 void updateCells() {
-	/*int size = cells.size();
+	int size = cells.size();
 	array_view<Cell, 1> source(size, cells);
 
 	parallel_for_each(
 		source.extent,
 		[=](index<1> idx) restrict(amp) {
 
-		
-	});*/
+	});
 }
 
 void updateScreen() {
@@ -107,7 +106,7 @@ int main(int argc, char *argv[]) {
 	test.c[1] = 100;
 	test.c[2] = 100;
 	test.state = true;
-	cells.push_back(test);
+	cells.push_back(test);;
 
 	while (!quit) {
 		while (SDL_PollEvent(&event)) {
