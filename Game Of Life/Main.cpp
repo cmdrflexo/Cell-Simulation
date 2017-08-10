@@ -16,8 +16,8 @@ SDL_Texture* texture;
 
 Uint32* pixels;
 
-const int width = 1280;
-const int height = 720;
+const int width = 640;
+const int height = 480;
 
 vector<Cell> cells;
 
@@ -59,7 +59,7 @@ void Draw() {
 }
 
 void updateCells() {
-	int size = cells.size();
+	/*int size = cells.size();
 	array_view<Cell, 1> source(size, cells);
 
 	parallel_for_each(
@@ -67,7 +67,7 @@ void updateCells() {
 		[=](index<1> idx) restrict(amp) {
 
 		
-	});
+	});*/
 }
 
 void updateScreen() {
